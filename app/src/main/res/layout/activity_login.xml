@@ -43,17 +43,21 @@
 				android:id="@+id/activity_login_login_edit_text"
 				android:layout_gravity="center_horizontal"
 				android:hint="@string/activity_login_edit_text_login"
-				android:includeFontPadding="false"
-				android:inputType="none" />
+				android:inputType="textEmailAddress"
+				android:textColorHint="#ff7e7e7e"
+				android:textColor="#ff000000"
+				android:backgroundTint="#ff7e7e7e" />
 
 			<EditText
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:inputType="textPassword"
-				android:ems="10"
 				android:id="@+id/activity_login_password_edit_text"
 				android:layout_gravity="center_horizontal"
-				android:hint="@string/activity_login_password_edit_text" />
+				android:hint="@string/activity_login_password_edit_text"
+				android:textColor="#ff000000"
+				android:textColorHint="#ff7e7e7e"
+				android:backgroundTint="#ff7e7e7e" />
 
 			<Button
 				android:layout_width="wrap_content"
