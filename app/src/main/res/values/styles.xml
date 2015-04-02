@@ -1,8 +1,13 @@
 <resources>
 
 	<!-- Base application theme. -->
-	<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+	<style name="AppTheme" parent="android:Theme.DeviceDefault">
 		<!-- Customize your theme here. -->
+		<item name="android:actionBarStyle">@style/DiaryActionBar</item>
+	</style>
+
+	<style name="DiaryActionBar" parent="@android:style/Widget.DeviceDefault.ActionBar">
+		<item name="android:background">#ff9d2222</item>
 	</style>
 
 </resources>
