@@ -1,9 +1,10 @@
 <resources>
 	<string name="app_name">Diary.ru</string>
 
-	<string name="hello_world">Hello world!</string>
-	<string name="action_settings">Settings</string>
-	<string name="title_activity_login">Войти</string>
+	<string name="app_key">89223f64d3d752fa9ce56c9ccdf41cda</string>
+	<string name="private_key">8eea18996eda1e3b1d0b4c0c848980d4</string>
+
+	<string name="activity_login_title">Войти</string>
 	<string name="activity_login_edit_text_login">Логин</string>
 	<string name="activity_login_password_edit_text">Пароль</string>
 </resources>

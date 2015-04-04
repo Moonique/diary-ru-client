@@ -2,10 +2,16 @@ package ru.diary.app;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.google.gson.Gson;
+
+import static ru.diary.app.Utils.md5;
 
 
 /**
@@ -29,6 +35,16 @@ public class LoginActivity extends Activity {
 		loginButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
+				User user = new User();
+				user.setUsername(loginEditText.getText().toString());
+				String passwordEncode = md5(R.string.private_key+passwordEditText.getText().toString());
+				user.setPassword(passwordEncode);
+				SharedPreferences sPref = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+				SharedPreferences.Editor editor = sPref.edit();
+				Gson gson = new Gson();
+				String json = gson.toJson(user);
+				editor.putString("user", json);
+				editor.commit();
 				Intent intent = new Intent(getBaseContext(), FavoritesActivity.class);
 				startActivity(intent);
 			}
