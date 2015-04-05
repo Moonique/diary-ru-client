@@ -8,7 +8,7 @@ public class Utils {
 	private Utils() { /* do nothing */ }
 
 
-	public static String md5(final String s) {
+	public static String getMD5(final String s) {
 		try {
 			// Create MD5 Hash
 			MessageDigest digest = MessageDigest

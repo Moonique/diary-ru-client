@@ -7,4 +7,6 @@
 	<string name="activity_login_title">Войти</string>
 	<string name="activity_login_edit_text_login">Логин</string>
 	<string name="activity_login_password_edit_text">Пароль</string>
+
+	<string name="webservice_auth">http://www.diary.ru/api/?method=user.auth</string>
 </resources>

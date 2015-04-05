@@ -1,9 +1,7 @@
-package ru.diary.app;
+package ru.diary.app.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
-
-import com.google.gson.annotations.SerializedName;
 
 /**
  * Created by Daria Schetinina on 4/2/15.

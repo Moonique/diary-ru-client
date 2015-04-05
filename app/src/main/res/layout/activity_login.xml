@@ -5,67 +5,69 @@
 
 
 	<ImageView
+		android:id="@+id/imageView"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:id="@+id/imageView"
-		android:scaleType="fitXY"
-		android:background="#ffffffff" />
+		android:background="#ffffffff"
+		android:scaleType="fitXY" />
 
 	<LinearLayout
-		android:orientation="vertical"
 		android:layout_width="match_parent"
-		android:layout_height="match_parent">
+		android:layout_height="match_parent"
+		android:orientation="vertical">
 
 		<RelativeLayout
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:layout_weight="1"
-			android:layout_gravity="bottom">
+			android:layout_gravity="bottom"
+			android:layout_weight="1">
 
 			<ImageView
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:src="@drawable/logo"
+				android:layout_centerVertical="true"
 				android:scaleType="centerInside"
-				android:layout_centerVertical="true" />
+				android:src="@drawable/logo" />
 		</RelativeLayout>
 
 		<LinearLayout
-			android:orientation="vertical"
 			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:padding="10dp"
-			android:layout_weight="1">
+			android:layout_weight="1"
+			android:orientation="vertical"
+			android:padding="10dp">
 
 			<EditText
+				android:id="@+id/activity_login_login_edit_text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:id="@+id/activity_login_login_edit_text"
 				android:layout_gravity="center_horizontal"
+				android:backgroundTint="#ff7e7e7e"
 				android:hint="@string/activity_login_edit_text_login"
 				android:inputType="textEmailAddress"
-				android:textColorHint="#ff7e7e7e"
+				android:text="Moonique"
 				android:textColor="#ff000000"
-				android:backgroundTint="#ff7e7e7e" />
+				android:textColorHint="#ff7e7e7e" />
 
 			<EditText
+				android:id="@+id/activity_login_password_edit_text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:inputType="textPassword"
-				android:id="@+id/activity_login_password_edit_text"
 				android:layout_gravity="center_horizontal"
+				android:backgroundTint="#ff7e7e7e"
 				android:hint="@string/activity_login_password_edit_text"
+				android:inputType="textPassword"
+				android:text="kuro15shiro"
 				android:textColor="#ff000000"
-				android:textColorHint="#ff7e7e7e"
-				android:backgroundTint="#ff7e7e7e" />
+				android:textColorHint="#ff7e7e7e" />
 
 			<Button
+				android:id="@+id/activity_login_login_button"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:text="@string/activity_login_title"
-				android:id="@+id/activity_login_login_button"
 				android:layout_gravity="center_horizontal"
-				android:layout_marginTop="20dp" />
+				android:layout_marginTop="20dp"
+				android:text="@string/activity_login_title" />
 		</LinearLayout>
 	</LinearLayout>
 
