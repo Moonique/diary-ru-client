@@ -10,13 +10,13 @@ import com.android.volley.toolbox.Volley;
 /**
  * Created by Daria Schetinina on 4/5/15.
  */
-public class AppController extends Application {
+public class DiaryApplication extends Application {
 
-	public static final String TAG = AppController.class.getSimpleName();
-	private static AppController instance;
+	public static final String TAG = DiaryApplication.class.getSimpleName();
+	private static DiaryApplication instance;
 	private RequestQueue requestQueue;
 
-	public static synchronized AppController getInstance() {
+	public static synchronized DiaryApplication getInstance() {
 		return instance;
 	}
 

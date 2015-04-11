@@ -19,7 +19,7 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import ru.diary.app.R;
-import ru.diary.app.core.AppController;
+import ru.diary.app.core.DiaryApplication;
 import ru.diary.app.core.SessionManager;
 import ru.diary.app.models.User;
 
@@ -107,7 +107,7 @@ public class LoginActivity extends Activity {
 				progressDialog.hide();
 			}
 		});
-		AppController.getInstance().addToRequestQueue(stringRequest, tag_string_req);
+		DiaryApplication.getInstance().addToRequestQueue(stringRequest, tag_string_req);
 	}
 
 	private void findViews() {
