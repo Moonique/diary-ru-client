@@ -1,13 +1,10 @@
 <resources>
 
 	<!-- Base application theme. -->
-	<style name="AppTheme" parent="android:Theme.DeviceDefault">
+	<style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
 		<!-- Customize your theme here. -->
-		<item name="android:actionBarStyle">@style/DiaryActionBar</item>
-	</style>
-
-	<style name="DiaryActionBar" parent="@android:style/Widget.DeviceDefault.ActionBar">
-		<item name="android:background">#ff9d2222</item>
+		<item name="colorPrimary">@color/color_primary</item>
+		<item name="colorPrimaryDark">@color/color_primary_dark</item>
 	</style>
 
 </resources>

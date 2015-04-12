@@ -3,17 +3,23 @@
 	android:layout_width="match_parent"
 	android:layout_height="match_parent">
 
+	<include
+		android:id="@+id/toolbar"
+		layout="@layout/toolbar" />
 
 	<ImageView
 		android:id="@+id/imageView"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:background="#ffffffff"
+		android:layout_alignParentTop="true"
+		android:background="@color/white"
+		android:contentDescription="@string/background"
 		android:scaleType="fitXY" />
 
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
+		android:layout_below="@+id/toolbar"
 		android:orientation="vertical">
 
 		<RelativeLayout
@@ -26,6 +32,7 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_centerVertical="true"
+				android:contentDescription="@string/diary_logo"
 				android:scaleType="centerInside"
 				android:src="@drawable/logo" />
 		</RelativeLayout>
@@ -42,24 +49,22 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal"
-				android:backgroundTint="#ff7e7e7e"
 				android:hint="@string/activity_login_edit_text_login"
 				android:inputType="textEmailAddress"
-				android:text="Moonique"
-				android:textColor="#ff000000"
-				android:textColorHint="#ff7e7e7e" />
+				android:text="@string/test_login"
+				android:textColor="@color/black"
+				android:textColorHint="@color/light_grey" />
 
 			<EditText
 				android:id="@+id/activity_login_password_edit_text"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
 				android:layout_gravity="center_horizontal"
-				android:backgroundTint="#ff7e7e7e"
 				android:hint="@string/activity_login_password_edit_text"
 				android:inputType="textPassword"
-				android:text="kuro15shiro"
-				android:textColor="#ff000000"
-				android:textColorHint="#ff7e7e7e" />
+				android:text="@string/test_password"
+				android:textColor="@color/black"
+				android:textColorHint="#7e7e7e" />
 
 			<Button
 				android:id="@+id/activity_login_login_button"

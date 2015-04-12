@@ -1,9 +1,10 @@
 package ru.diary.app.ui;
 
-import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -26,10 +27,7 @@ import ru.diary.app.models.User;
 import static ru.diary.app.Utils.getMD5;
 
 
-/**
- * Created by Daria Schetinina on 4/1/15.
- */
-public class LoginActivity extends Activity {
+public class LoginActivity extends ActionBarActivity {
 
 	private static final String TAG = LoginActivity.class.getSimpleName();
 
@@ -37,19 +35,23 @@ public class LoginActivity extends Activity {
 	private EditText passwordEditText;
 	private Button loginButton;
 	private ProgressDialog progressDialog;
-	private SessionManager session;
+	private Toolbar toolbar;
 
 	@Override
 	protected void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_login);
-		getActionBar().setTitle(R.string.app_name);
+
 		findViews();
 		setListeners();
+
 		progressDialog = new ProgressDialog(this);
 		progressDialog.setCancelable(false);
 
-		session = new SessionManager(getApplicationContext());
+		//SessionManager session = new SessionManager(getApplicationContext());
+
+		setSupportActionBar(toolbar);
+		getSupportActionBar().setTitle(R.string.app_name);
 
 	}
 
@@ -114,6 +116,7 @@ public class LoginActivity extends Activity {
 		loginEditText = (EditText) findViewById(R.id.activity_login_login_edit_text);
 		passwordEditText = (EditText) findViewById(R.id.activity_login_password_edit_text);
 		loginButton = (Button) findViewById(R.id.activity_login_login_button);
+		toolbar = (Toolbar) findViewById(R.id.toolbar);
 	}
 
 }

@@ -9,4 +9,20 @@
 	<string name="activity_login_password_edit_text">Пароль</string>
 
 	<string name="webservice_auth">http://www.diary.ru/api/?method=user.auth</string>
+	<string name="title_activity_main">MainActivity</string>
+
+	<string name="title_section1">Section 1</string>
+	<string name="title_section2">Section 2</string>
+	<string name="title_section3">Section 3</string>
+
+	<string name="navigation_drawer_open">Open navigation drawer</string>
+	<string name="navigation_drawer_close">Close navigation drawer</string>
+
+	<string name="action_example">Example action</string>
+
+	<string name="action_settings">Settings</string>
+	<string name="diary_logo">Логотип</string>
+	<string name="background">Фон</string>
+	<string name="test_login">Moonique</string>
+	<string name="test_password">kuro15shiro</string>
 </resources>
